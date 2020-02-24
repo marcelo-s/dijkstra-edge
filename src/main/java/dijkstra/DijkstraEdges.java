@@ -82,9 +82,9 @@ public class DijkstraEdges {
 
     // Returns the un-visited node of the minEdge
     private Node getTargetNode(Set<Node> visitedNodes, Edge minEdge) {
-        List<Node> nodes = minEdge.getEdges();
-        if (visitedNodes.containsAll(nodes)) return null;
-        return visitedNodes.contains(nodes.get(0)) ? nodes.get(1) : nodes.get(0);
+        List<Node> nodesOfEdge = minEdge.getNodesOfEdge();
+        if (visitedNodes.containsAll(nodesOfEdge)) return null;
+        return visitedNodes.contains(nodesOfEdge.get(0)) ? nodesOfEdge.get(1) : nodesOfEdge.get(0);
     }
 
     public Map<Node, Node> getParentsMap() {

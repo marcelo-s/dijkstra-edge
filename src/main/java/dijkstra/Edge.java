@@ -14,7 +14,7 @@ public class Edge {
         this.weight = weight;
     }
 
-    public List<Node> getEdges() {
+    public List<Node> getNodesOfEdge() {
         return Arrays.asList(u, v);
     }
 

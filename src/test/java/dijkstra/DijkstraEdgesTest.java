@@ -120,7 +120,7 @@ public class DijkstraEdgesTest {
 
     // See graph defined in : https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/
     @Test
-    public void findShortestPaths3() {
+    public void findShortestPathsParents2() {
         int[][] edges = {
                 {0, 1, 4},
                 {0, 7, 8},
